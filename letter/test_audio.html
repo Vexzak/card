@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Test</title>
+</head>
+<body>
+    <h1>Audio Test</h1>
+    <audio id="testMusic" controls>
+        <source src="mundo.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="document.getElementById('testMusic').play()">Play Music</button>
+    <script>
+        const audio = document.getElementById('testMusic');
+        console.log('Audio element:', audio);
+        console.log('Can play MP3:', audio.canPlayType('audio/mpeg'));
+        
+        audio.addEventListener('loadeddata', () => {
+            console.log('Audio loaded successfully!');
+        });
+        
+        audio.addEventListener('error', (e) => {
+            console.error('Audio error:', e);
+            console.error('Error code:', audio.error);
+        });
+    </script>
+</body>
+</html>
