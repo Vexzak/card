@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day! 💕</title>
+    <link rel="stylesheet" href="front.css">
+</head>
+<body>
+    <!-- Floating hearts background -->
+    <div class="hearts-bg">
+        <div class="floating-heart">💕</div>
+        <div class="floating-heart">💖</div>
+        <div class="floating-heart">💗</div>
+        <div class="floating-heart">💕</div>
+        <div class="floating-heart">💖</div>
+        <div class="floating-heart">💗</div>
+        <div class="floating-heart">💕</div>
+        <div class="floating-heart">💖</div>
+        <div class="floating-heart">💗</div>
+        <div class="rose-petal">🌸</div>
+        <div class="rose-petal">🌺</div>
+        <div class="rose-petal">🌸</div>
+        <div class="rose-petal">🌺</div>
+        <div class="rose-petal">🌸</div>
+    </div>
+    
+    <!-- Decorative background bubbles -->
+    <div class="bg-bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    
+    <!-- Background music -->
+    <audio id="bgMusic" loop>
+        <source src="mundo.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <!-- Envelope -->
+        <div class="envelope" id="envelope">
+            <div class="envelope-base">
+                <!-- Address decoration -->
+                <div class="address-lines">
+                    <div class="address-line"></div>
+                    <div class="address-line"></div>
+                    <div class="address-line"></div>
+                </div>
+                <!-- Decorative stamp -->
+                <div class="stamp">💕</div>
+            </div>
+            <div class="envelope-flap"></div>
+            <div class="envelope-top"></div>
+            <!-- Wax seal -->
+            <div class="wax-seal">💖</div>
+        </div>
+
+        <!-- Letter -->
+        <div class="letter" id="letter">
+            <div class="letter-pattern"></div>
+            <button class="close-btn" id="closeBtn">✕</button>
+            <div class="letter-content">
+                <h1>Happy Valentine's Day!</h1>
+                <div class="heart">💖</div>
+                <div class="divider"></div>
+                <p>Hi baby ko, Happy Valentine's Day. It's ya boi, Isak.</p>
+                <p>I'm so sorry sa nangyari kahapon. Nag reflect me sa mga actions ko and I realized na mali gid na wala me nag tell beforehand bisag I wanted to surprise you, nagka conflict nuon sa schedule mo. It's okay if you don't believe me, I'm really sorry. I acknowledge my mistakes, and next time I'll plan it all throughout, dili pinakalit.</p>
+                <p>Today is a special day. It is Valentine's Day, the day of love. Thank you so much sa flowers kahapon baby and sa gifts. Gi suot ko yung gift mo na pants and yung half zip na shirt, Simwood pa talaga so mahal, I love it so much.</p>
+                <p>Na realize kodin na tama sinabi ni ate, nag reflect me so much on why I'm like this, why dili nako ma hatag ang best sa imoha. That's why I'll start to change hindi lang sayo, but in all I've been doing. I'll ascend, I'll improve myself for the better. Thank you again, love.</p>
+                <p>I'm sorry, now kolang na realized na ang mga gina gawa ko kay half-assed. I'm really sorry. I want to make bawi with you. I love you baby ko so much, Happy Valentine's Day!</p>
+                <div class="divider"></div>
+                <div class="heart clickable-gift" id="giftEmoji">🎁</div>
+                <p class="signature">I am all yours, Isak ❤️</p>
+            </div>
+        </div>
+
+        <!-- Image popup modal -->
+        <div class="image-modal" id="imageModal">
+            <div class="modal-overlay" id="modalOverlay"></div>
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">✕</button>
+                <img src="boquet.png" alt="Beautiful Bouquet" id="bouquetImage">
+            </div>
+        </div>
+        
+        <!-- Date proposal box - separate from image, overlays on top -->
+        <div class="proposal-box" id="proposalBox">
+            <div class="proposal-content">
+                <p class="proposal-text">Can we go on a date on February 16 after your class? My plan.</p>
+                <div class="proposal-buttons">
+                    <button class="btn-yes" id="btnYes">Yes! 💖</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- No button - separate so it can move anywhere -->
+        <button class="btn-no" id="btnNo">No</button>
+
+        <!-- Love confession overlay -->
+        <div class="love-overlay" id="loveOverlay">
+            <h1 class="love-text">I LOVE YOU ASHNAIRAH KO!</h1>
+        </div>
+
+        <!-- Click instruction -->
+        <div class="click-text" id="clickText">Click the envelope to open</div>
+    </div>
+
+    <script src="animate.js"></script>
+</body>
+</html>
